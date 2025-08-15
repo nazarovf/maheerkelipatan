@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kelipatan Bilangan</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/0/02/Sigma_uppercase.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        Belajar Kelipatan Bilangan
+        <small>Oleh: Muhammad Maheer Al'Asyi | Kelas 4 SD IT Luqmanul Hakim</small>
+    </header>
+
+    <div class="teori">
+        <p><b>📘 Apa itu Kelipatan Bilangan?</b></p>
+        <p>Kelipatan bilangan adalah angka-angka yang kita dapatkan jika kita mengalikan sebuah bilangan dengan 1, 2, 3,
+            4, dan seterusnya</p>
+        <p>Contoh: Kelipatan dari 3 adalah: <b>3, 6, 9, 12, … </b>, Kelipatan dari 5 adalah: <b>5, 10, 15, 20, … </b>
+        </p>
+        <p style="font-weight: 700;">Cara Mencari Kelipatan:</p>
+        <p>Dengan Perkalian: Kalikan bilangan itu dengan 1, 2, 3,... Contoh: 4×1=4, 4×2=8, 4×3=12 ...</p>
+        <p>Dengan Penjumlahan Berulang: Tambahkan bilangan itu berulang kali. Contoh: 4, 4+4=8, 8+4=12 ...</p>
+    </div>
+
+    <section class="wrap">
+        <div class="panel">
+            <div class="row">
+                <label for="k1">Bilangan</label>
+                <input id="k1" type="number" min="1" max="100" placeholder="misal: 3" />
+                <span class="chip"><span class="dot c1"></span> Bilangan #1</span>
+            </div>
+            <div class="row">
+                <label for="k2">Bilangan</label>
+                <input id="k2" type="number" min="1" max="100" placeholder="misal: 4" />
+                <span class="chip"><span class="dot c2"></span> Bilangan #2</span>
+            </div>
+            <div class="row">
+                <label for="k3">Bilangan</label>
+                <input id="k3" type="number" min="1" max="100" placeholder="misal: 5" />
+                <span class="chip"><span class="dot c3"></span> Bilangan #3</span>
+            </div>
+            <div class="btns">
+                <button class="btn-primary" id="tandai">Tandai Kelipatan</button>
+                <button class="btn-ghost" id="reset">Hapus Arsiran</button>
+            </div>
+            <div class="helper">
+                <b>Penjelasan singkat:</b><br>
+                1) Ketik bilangan yang ingin dicari kelipatannya.<br>
+                2) Tekan <b>Hapus Arsiran</b> untuk reset.
+            </div>
+        </div>
+
+        <div id="grid" class="grid" aria-label="Tabel angka 1 sampai 100"></div>
+    </section>
+
+    <section class="wrap" style="margin-top:20px;">
+        <h2>Hasil Arsiran</h2>
+        <div class="panel">
+            <div class="row"><label id="lblH1">Hasil Kelipatan - :</label> <span id="hasil1">-</span></div>
+            <div class="row"><label id="lblH2">Hasil Kelipatan - :</label> <span id="hasil2">-</span></div>
+            <div class="row"><label id="lblH3">Hasil Kelipatan - :</label> <span id="hasil3">-</span></div>
+        </div>
+    </section>
+
+    <section class="wrap" style="margin-top:20px;">
+        <h2>Bilangan yang sama</h2>
+        <div class="panel">
+            <div class="row"><label id="lbl12">Kelipatan - & - :</label> <span id="same12">-</span></div>
+            <div class="row"><label id="lbl13">Kelipatan - & - :</label> <span id="same13">-</span></div>
+            <div class="row"><label id="lbl23">Kelipatan - & - :</label> <span id="same23">-</span></div>
+            <div class="row"><label id="lbl123">Kelipatan - , - & - :</label> <span id="same123">-</span></div>
+        </div>
+    </section>
+
+    <footer
+        style="background-color: #ffefd5; padding: 30px 15px; text-align: center; margin-top: 50px; font-family: poppins, sans-serif;">
+
+        <!-- Foto Profil -->
+        <img src="fotoku.jpeg" alt="Foto Profil"
+            style="width:150px; height:150px; border-radius:50%; object-fit:cover; ">
+
+        <!-- Nama dan Deskripsi -->
+        <h3 style="margin-top: 15px; color: #ff6600;">Hai.. Saya Muhammad Maheer Al'Asyi</h3>
+        <p style="max-width: 500px; margin: 10px auto; color: #333; font-size: medium;">
+            Website ini dibuat untuk membantuku belajar faktor bilangan dengan cara yang menyenangkan dan mudah
+            dipahami.
+        </p>
+
+        <!-- Ikon Sosial Media -->
+        <div style="margin-top: 15px;">
+            <a href="https://www.tiktok.com/@frostgoldwppsdmtiggi" target="_blank" style="margin-right: 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" width="30" alt="TikTok">
+            </a>
+            <a href="https://www.youtube.com/@Frostgold-w" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="30" alt="YouTube">
+            </a>
+        </div>
+
+
+        <!-- Hak Cipta -->
+        <p style="margin-top: 20px; font-size: 14px; color: #666; font-size: small;">
+            &copy; 2025 Maheer Faktor Bilangan. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
